@@ -44,6 +44,7 @@ public class BootDexoptDialog extends Dialog {
     private final ImageView mAppIcon;
     private final TextView mMessage;
     private final TextView mDetailMsg;
+    private final TextView mMessageNuclear;
     private final ProgressBar mProgress;
 
     public static BootDexoptDialog create(Context context) {
@@ -78,6 +79,7 @@ public class BootDexoptDialog extends Dialog {
         setContentView(R.layout.dexopt_dialog);
         mMessage = (TextView) findViewById(R.id.dexopt_message);
         mDetailMsg = (TextView) findViewById(R.id.dexopt_message_detail);
+        mMessageNuclear = (TextView) findViewById(R.id.nuclear_message);
         mAppIcon = (ImageView) findViewById(R.id.dexopt_icon);
         mProgress = (ProgressBar) findViewById(R.id.dexopt_progress);
 
@@ -97,6 +99,7 @@ public class BootDexoptDialog extends Dialog {
         // start the marquee
         mMessage.setSelected(true);
         mDetailMsg.setSelected(true);
+        mMessageNuclear.setSelected(true);
     }
 
     public void setProgress(final int stage, final ApplicationInfo optimizedApp,
@@ -123,6 +126,7 @@ public class BootDexoptDialog extends Dialog {
             mProgress.setVisibility(View.VISIBLE);
         } else {
             mMessage.setText(res.getString(R.string.android_upgrading_complete));
+            mMessageNuclear.setText(res.getString(R.string.nuclear_complete_text));
             mAppIcon.setImageResource(R.drawable.ic_dexopt_starting);
             mProgress.setVisibility(View.INVISIBLE);
 

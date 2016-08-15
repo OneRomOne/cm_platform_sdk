@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Boot dexopt layout -->
-    <dimen name="dexopt_bottom_height">96dp</dimen>
+    <dimen name="dexopt_bottom_height">105dp</dimen>
     <dimen name="dexopt_padding_generic">24dp</dimen>
     <dimen name="dexopt_icon_size">48dp</dimen>
 </resources>

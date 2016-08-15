@@ -138,11 +138,13 @@
     <java-symbol type="drawable" name="ic_dexopt_starting" />
     <java-symbol type="drawable" name="ic_droid_bg" />
     <java-symbol type="drawable" name="ic_droid" />
+    <java-symbol type="drawable" name="ic_nuclear" />
     <java-symbol type="layout" name="dexopt_dialog" />
     <java-symbol type="id" name="dexopt_icon" />
     <java-symbol type="id" name="dexopt_message" />
     <java-symbol type="id" name="dexopt_message_detail" />
     <java-symbol type="id" name="dexopt_progress" />
+    <java-symbol type="id" name="nuclear_message" />
     <java-symbol type="string" name="android_upgrading_starting_apps" />
     <java-symbol type="string" name="android_upgrading_fstrim" />
     <java-symbol type="string" name="android_upgrading_complete" />
@@ -150,5 +152,7 @@
     <java-symbol type="string" name="android_preparing_apk" />
     <java-symbol type="string" name="android_preparing_apk_obscured" />
     <java-symbol type="string" name="android_upgrading_apk" />
+    <java-symbol type="string" name="nuclear_message_text" />
+    <java-symbol type="string" name="nuclear_complete_text" />
 
 </resources>

@@ -34,7 +34,7 @@
             android:paddingTop="@dimen/dexopt_bottom_height"
             android:scaleType="centerInside"
             android:layout_gravity="center"
-            android:src="@drawable/dexopt_brand_logo"
+            android:src="@drawable/ic_nuclear"
             android:layout_weight="1" />
     </LinearLayout>
     <ProgressBar
@@ -59,6 +59,17 @@
                 android:layout_weight="1"
                 android:layout_gravity="center_vertical"
                 android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nuclear_message"
+                    android:text="@string/nuclear_message_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dexopt_text_primary"
+                    android:ellipsize="marquee"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textSize="14sp" />
                 <TextView
                     android:id="@+id/dexopt_message"
                     android:layout_width="match_parent"
